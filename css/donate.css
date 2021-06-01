@@ -51,6 +51,10 @@
     margin-top: 10px;
 }
 
+.right button:hover{
+    background:#f8a488;
+    color:white;
+}
 .right img{
     height: 60%;
 }
