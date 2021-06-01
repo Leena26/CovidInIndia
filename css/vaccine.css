@@ -1,0 +1,299 @@
+@import url('./fonts.css');
+*{
+    margin: 0;
+    padding: 0;
+}
+ 
+body{
+    font-family: 'Open Sans', sans-serif;;
+}
+
+.vaC{
+    display: flex;
+    margin: 20px 40px;
+    overflow: visible;
+    height: auto;
+    justify-content: center;
+}
+
+.left{
+    width: 60%;
+    background: #f6f6f6;
+    padding:20px;
+    border-radius: 20px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.left img{
+    display: none;
+    height: 200px;
+}
+
+.left h2{
+    font-size: 30px;  
+}
+
+.left p{
+    font-size: 18px;
+}
+
+.right div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    width: 450px;
+    background:#f6f6f6;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    height: 400px;
+}
+
+.right div p{
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.right div button{
+    padding: 5px;
+    border: 5px solid #f8a488;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition:all 0.2s ease;
+    margin-top: 10px;
+}
+
+.random{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    width: 450px;
+    background:#f6f6f6;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    height: 500px;
+    margin-top: 30px;
+}
+
+.right div i{
+    margin-left: 5px;
+}
+
+.right div button:hover{
+    background: #f8a488;
+    color: #F8F5F1;
+}
+
+.right div img{
+    width: 250px;
+}
+
+@media only screen and (max-width:1200px){
+    .right div{
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width:1100px){
+    .right div img{
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .right div{
+        width: 300px;
+    }
+    .random{
+        height: 450px;
+    }
+}
+@media only screen and (max-width:800px){
+    .right{
+        display: none;
+    }
+    .left{
+        width: 110%;
+    }
+    .left img{
+        display: block;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .left p{
+        font-size: 13px;
+    }
+    .left h2{
+        font-size: 18px;
+    }
+}
+
+.total{
+    width: 100vw;
+    height: 600px;
+    background: #f0f0f0;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.total .rightt{
+    display: flex;
+    flex-direction: column;
+}
+
+.total .rightt div{
+    display: flex;
+}
+
+.total .rightt div div{
+    width: 170px;
+    height: 170px;
+    border: 5px solid #45526C;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    color: #45526C;
+    transition: all 0.15s ease;
+}
+.total .rightt div div i{
+    margin: 30px 0 10px 0;
+    font-size: 60px;
+}
+
+.total .rightt div div h4{
+    text-transform: uppercase;
+}
+
+.total .rightt div div:hover{
+    background: #45526C;
+    cursor: pointer;
+    color: white;
+}
+
+.total .leftt button, .total .a{
+    padding: 5px;
+    border: 5px solid #f8a488;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition:all 0.2s ease;
+    margin-top: 10px;
+    width: 150px;
+}
+
+.total .leftt button:hover, .total .a:hover{
+    background: #f8a488;
+    color: #F8F5F1;
+}
+
+.total .a{
+    display: none;
+}
+
+.total .leftt button i, .total .a i{
+    margin: 5px;
+}
+
+.total .leftt{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.total .leftt p{
+    font-size: 15px;
+}
+
+.total .leftt h2{
+    font-size: 30px;
+}
+
+@media only screen and (max-width:1200px){
+    .total .rightt div div{
+        height: 130px;
+        width: 130px;
+    }
+    .total .rightt div div h4{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width:1000px){
+    .total{
+        flex-direction: column;
+        height: 650px;
+    }
+    .total .leftt{
+        text-align: center;
+        height: 100px;
+    }
+
+    .total .leftt button{
+        display: none;
+    }
+    .total .a{
+        display: flex;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .total .rightt div div{
+        width: 100px;
+        height: 100px;
+    }
+    .total .rightt div div i{
+        margin: 7px 0 5px 0;
+        font-size: 40px;
+    }
+    .total .rightt div div h4{
+        overflow-y: hidden;
+    }
+}
+@media only screen and (max-width:520px){
+    .total .leftt{
+        height: 90px;
+        margin-bottom: 0;
+    }
+    .total .rightt{
+        display: flex;
+        flex-direction: row;
+    }
+    .total .rightt div{
+        flex-direction: column;
+    }
+    .total .rightt div div{
+        width: 80px;
+        height: 100px;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width:430px){
+    .total .leftt{
+        height: 110px;
+        margin-bottom: 0;
+    }
+    .total{
+        height: 700px;
+    }
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid Problem</title>
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/start.css">
+    <link rel="stylesheet" href="./css/problem.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+    <nav>
+        <div class="first-nav">
+            <a href="./index.html"><h3 style="color: black;"id="logo"><img src="./assets/logo.png" alt="">The NEW NORM</h3></a>
+            <ul class="menu">
+                <a href="./index.html"><li>Home</li></a>
+                <a href="./problem.html"><li>Problem</li></a>
+                <a href="./solution.html"><li>Solution</li></a>
+                <li onclick="drop()" id="help" >Help
+                    <i id="downA" class="fas fa-angle-down"></i>
+                    <i id="upA" class="fas fa-angle-up"></i>
+                </li>
+                <ul class="dropdown" id="drop-cont">
+                    <a href="./vaccine.html"><li>Vaccines</li></a>
+                    <a href="./frontline.html"><li>Frontliners</li></a>
+                    <a href="./donate.html"><li>Donate</li></a>
+                </ul>
+            </ul>
+        </div>
+        
+        <div class="container">
+            <div class="toggle">
+                <div class="spans">
+                    <input id="checkbox" onclick="change()" type="checkbox">
+                    <span id="top"></span>
+                    <span id="middle"></span>
+                    <span id="bottom"></span>
+                </div>
+                <a style="color:black;" href="./index.html"><h3 id="logo"> <img src="./assets/logo.png" alt="">The NEW NOM</h3></a>
+            </div>
+            <div id="overlay" class="overlay">
+                <ul>
+                    <a href="./index.html"><li>Home</li></a>
+                    <a href="./problem.html"><li>Problem</li></a>
+                    <a href="./solution.html"><li>Solution</li></a>                        
+                    <a href="./vaccine.html"><li>Vaccines</li></a>
+                    <a href="./frontline.html"><li>Frontliners</li></a>
+                    <a href="./donate.html"><li>Donate</li></a>
+                    <a href=""><li>About</li></a>
+                </ul>
+            </div>  
+        </div>
+    </nav>
+    <script src="./java/nav.js"></script>
+    <!-- END OF NAV -->
+    
+    <div class="start">
+        <div class="start-c">
+            <h2>Problematic Pandemic</h2>
+            <p> The Covid-19, Coronavirus disease 2019, has impacted
+                the people all over the globe. Students have had to 
+                take to online classes and teachers find new methods
+                of engaging children, some people lose jobs, and some
+                just have to stay at home and work. 
+            </p>
+            <div class="btns">
+                <a target="_blank" href="https://www.worldometers.info/coronavirus/"><button>Statistics<i class="fas fa-angle-right"></i></button></a>
+                <a href="./donate.html"><button id="don">Donate<i class="fas fa-angle-right"></i></button></a>
+            </div>
+        </div>
+        <img src="./assets/problemA/laptop.png" alt="">
+    </div>
+
+    
+    <div class="hoverC">
+        <div class="hov" id="hov1">
+            <div class="cont">
+                <h2>Students</h2>
+                <p>
+                    Students set their alarm to wake up each morning and not go to school, 
+                    but instead to join their online class. 
+                </p>
+                <a href="./problem.html?#story1"><button>Read More </button></a>
+            </div>
+            <img class="img" src="./assets/problemA/students.png" alt="">
+        </div>
+        <div class="hov" id="hov2">
+            <div class="cont">
+                <h2>Daily Wagers and Impoverished</h2>
+                <p>
+                    Daily wage workers earn money each day, then used
+                    that to pay for their necessities each day. 
+                </p>
+                <a href="./problem.html?#story2"><button>Read More </button></a>
+            </div>
+            <img class="img" src="./assets/problemA/image-removebg-preview (1).png" alt="">
+        </div>
+        <div class="hov" id="hov3">
+            <div class="cont">
+                <h2>Working Population</h2>
+                <p>
+                    Engineers, Technicians, Musicians, Politicians, 
+                    and also Teachers; 
+                    Everyone has to adapt to the virtual lifestyle.
+                </p>
+                <a href="./problem.html?#story3"><button>Read More </button></a>
+            </div>
+            <img class="img" src="./assets/problemA/work.png" alt="">
+        </div>
+        <div class="hov" id="hov4">
+            <div class="cont">
+                <h2>Retired folks and Seniors</h2>
+                <p>
+                    Seniors and retired people have always been a 
+                    group of people who need to take extra care in 
+                    sheilding them from the virus. 
+                </p>
+                <a href="./problem.html?#story4"><button>Read More </button></a>
+            </div>
+            <img class="img" src="./assets/problemA/old.png" alt="">
+        </div>
+    </div>
+    
+
+    <div class="stories">
+        <div class="story story1" id="story1">
+            <div class="top">
+                <h3>Students</h3>
+                <img src="./assets/problemA/students.png" alt="">
+            </div>
+            <div class="cont">
+                <p>
+                    As with most teaching methods, online learning also has 
+                    its own set of positives and negatives. Decoding and 
+                    understanding these positives and negatives will help 
+                    institutes in creating strategies for more efficient 
+                    delivery of the lessons, ensuring an uninterrupted learning 
+                    journey for the students.
+                    <br>
+                    With this sudden shift away from the classroom in many parts 
+                    of the globe, some are wondering whether the adoption of online 
+                    learning will continue to persist post-pandemic, and how such a 
+                    shift would impact the worldwide education market.
+                </p>
+                <img src="./assets/problemA/studenB.png" alt="">
+            </div>
+        </div>
+        <div class="story story2" id="story2">
+            <div class="top">
+                <h3>Daily Wagers and Impoverished</h3>
+                <img src="./assets/problemA/image-removebg-preview (1).png" alt="">
+            </div>
+            <div class="cont">
+                <p>
+                    About 450 million or roughly 90% of India’s population works in the 
+                    unorganised economy (6). These include mostly the poor, daily wagers, 
+                    construction workers, street vendors, landless laborers, petty traders, 
+                    tailors, barbers, cycle rickshaw/auto-rickshaw/taxi/Ola/Uber drivers 
+                    and the homeless. The main source of the livelihood of these daily 
+                    wagers was severely compromised due to the lockdown, causing massive 
+                    disturbance to their livings.
+                </p>
+                <img src="./assets/problemA/PoorB.png" alt="">
+            </div>
+        </div>
+        <div class="story story3" id="story3">
+            <div class="top">
+                <h3>Working Population</h3>
+                <img src="./assets/problemA/work.png" alt="">
+            </div>
+            <div class="cont">
+                <p>
+                    More than one in 10 people aged 16 - 25 have lost their job, and just 
+                    under six in 10 have seen their earnings fall since the coronavirus 
+                    pandemic began, new research shows. The study found young workers 
+                    to be twice as likely to have lost their jobs compared to older 
+                    employees. The self-employed and those who grew up in a poor family.
+                    The survey, carried out by academics from the London School of 
+                    Economics and Political Science (LSE) and Exeter University, provides 
+                    further evidence that young people are suffering substantial and 
+                    sustained losses, not only to their employment, but also their 
+                    education.
+                </p>
+                <img src="./assets/problemA/WorkB.png" alt="">
+            </div>
+        </div>
+        <div class="story" id="story4">
+            <div class="top">
+                <h3>Retired folks and Seniors</h3>
+                <img src="./assets/problemA/old.png" alt="">
+            </div>
+            <div class="cont">
+                <p>
+                    Older adults are at greater risk of requiring hospitalization or dying 
+                    if they are diagnosed with COVID-19. As you get older, your risk of 
+                    being hospitalized for COVID-19 increases.Everyone should take steps 
+                    to prevent getting and spreading the virus that causes COVID-19 to 
+                    protect themselves, their communities, and people who are at increased 
+                    risk of severe illness.Masks offer some protection to you and are also 
+                    meant to protect those around you, in case you are unknowingly infected 
+                    with the virus that causes COVID-19.
+                </p>
+                <img src="./assets/problemA/OldB.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="foot">
+        <h3>Want to know who made this?</h3>
+        <a href="./about.html"><button>View More</button></a>
+    </div>
+</body>
+</html>

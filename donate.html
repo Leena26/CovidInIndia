@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/start.css">
+    <link rel="stylesheet" href="./css/donate.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+    <nav>
+        <div class="first-nav">
+            <a href="./index.html"><h3 style="color: black;"id="logo"><img src="./assets/logo.png" alt="">The NEW NORM</h3></a>
+            <ul class="menu">
+                <a href="./index.html"><li>Home</li></a>
+                <a href="./problem.html"><li>Problem</li></a>
+                <a href="./solution.html"><li>Solution</li></a>
+                <li onclick="drop()" id="help" >Help
+                    <i id="downA" class="fas fa-angle-down"></i>
+                    <i id="upA" class="fas fa-angle-up"></i>
+                </li>
+                <ul class="dropdown" id="drop-cont">
+                    <a href="./vaccine.html"><li>Vaccines</li></a>
+                    <a href="./frontline.html"><li>Frontliners</li></a>
+                    <a href="./donate.html"><li>Donate</li></a>
+                </ul>
+            </ul>
+        </div>
+        
+        <div class="container">
+            <div class="toggle">
+                <div class="spans">
+                    <input id="checkbox" onclick="change()" type="checkbox">
+                    <span id="top"></span>
+                    <span id="middle"></span>
+                    <span id="bottom"></span>
+                </div>
+                <a style="color:black;" href="./index.html"><h3 id="logo"> <img src="./assets/logo.png" alt="">The NEW NOM</h3></a>
+            </div>
+            <div id="overlay" class="overlay">
+                <ul>
+                    <a href="./index.html"><li>Home</li></a>
+                    <a href="./problem.html"><li>Problem</li></a>
+                    <a href="./solution.html"><li>Solution</li></a>                        
+                    <a href="./vaccine.html"><li>Vaccines</li></a>
+                    <a href="./frontline.html"><li>Frontliners</li></a>
+                    <a href="./donate.html"><li>Donate</li></a>
+                    <a href=""><li>About</li></a>
+                </ul>
+            </div>  
+        </div>
+    </nav>
+    <script src="./java/nav.js"></script>
+    <!-- END OF NAV -->
+
+    <div class="start">
+        <div class="start-c">
+            <h2>Donate</h2>
+            <p> Essential workers, including healthcare workers, are expected to go out when everyone 
+                else is expected to stay inside. Now more than ever, it is important to make sure 
+                you address your fears and making sure you have strong coping strategies. It’s 
+                especially important that you address your stress and anxiety to prevent burnout.
+            </p>
+            <div class="btns">
+                <a target="_blank" href="https://www.worldometers.info/coronavirus/"><button>Statistics<i class="fas fa-angle-right"></i></button></a>
+                <a href="./vaccine.html"><button id="don">Vaccine<i class="fas fa-angle-right"></i></button></a>
+            </div>
+        </div>
+        <img src="./assets/startdonate.png" alt="">
+    </div>
+
+    <div class="part">
+        <div class="left">
+            <h3>Reach Vulnerable people immediatly</h3>
+            <br>
+            <p>India is in the grip of a second deadly coronavirus wave.
+                 Despite being through the pandemic for a year, we did 
+                 not learn our lessons. The continued neglect of the 
+                 healthcare system has led to its complete collapse under
+                  the crushing weight of the pandemic.
+                Poor communities,once again will bear the brunt. Living in crammed4
+                 areas without sanitation and using shared toilets and water
+                  points, they have no means to follow COVID-19 guidelines. 
+               In addition, migrant workers employed in the informal sector are once
+                again facing uncertainties. Sporadic lockdowns and curfews have 
+                already triggered another exodus of migrant workers, putting
+                 them at the risk ofnot just contracting COVID-19 but also 
+                 prolonged months without jobs or money. 
+                
+                We must once again come together and support the most vulnerable fight this crisis. Together we must stand for #India4All.</p>
+        </div>
+        <div class="right">
+            <h2>Donate Money</h2>
+            <p>Your support is VITAL! </p>
+            <img src="./assets/donate/image-removebg-preview (2).png" alt="">
+            <a target="_blank" href="https://www.oxfamindia.org/ndtv#donate_form"><button>Donate<i class="fas fa-angle-right"></i></button></a>
+        </div>
+    </div>
+    <div class="foot">
+        <h3>Want to know who made this?</h3>
+        <a href="./about.html"><button>View More</button></a>
+    </div>
+</body>
+</html>

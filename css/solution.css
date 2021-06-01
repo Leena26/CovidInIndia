@@ -1,0 +1,148 @@
+@import url(./fonts.css);
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.carousel{
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.part{
+    height: 400px;
+    width: 300px;
+    background: #f6f6f6;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.part .img{
+    width: 100%;
+    height: 330px;
+    background:rgb(143, 120, 120) ;
+}
+
+.one .img{
+    background:url("..//assets/yoga/animation1/main.png") ;
+    background-size: cover;
+    background-position: bottom;
+    animation: breathe 10s infinite;
+    object-fit: contain;
+}
+
+.two .img{
+    background:url("..//assets/yoga/animation2/main.jpg") ;
+    background-size: cover;
+    background-position: bottom;
+    animation: physic 15s ease-in-out infinite;
+    object-fit: contain;
+    animation-delay:1s ;
+}
+
+.three .img{
+    background:url("..//assets/yoga/animation3/main.png");
+    background-position: bottom;
+    animation: other 15s infinite;
+    object-fit: contain;
+    animation-delay:3s ;
+}
+
+@keyframes breathe {
+    0%{background:url("..//assets/yoga/animation1/main.png");
+        background-size: cover;
+        background-position: bottom;}
+    50%{background:url("..//assets/yoga/animation1/two.png");
+        background-size: cover;
+        background-position: bottom;}
+    95%{background:url("../assets/yoga/animation1/one.png");
+        background-size: cover;
+        background-position: bottom;}
+    100%{background:url("../assets/yoga/animation1/main.png");
+        background-size: cover;
+        background-position: bottom;}
+}
+
+@keyframes physic {
+    0%{background:url("../assets/yoga/animation2/main.jpg");
+        background-size: cover;
+        background-position: bottom;}
+    50%{background:url("../assets/yoga/animation2/one.png");
+        background-size: cover;
+        background-position: bottom;}
+    95%{background:url("..//assets/yoga/animation2/two.png");
+        background-size: cover;
+        background-position: bottom;}
+    100%{background:url("..//assets/yoga/animation2/main.jpg");
+        background-size: cover;
+        background-position: bottom;}
+}
+
+@keyframes other {
+    0%{background:url("..//assets/yoga/animation3/main.png");
+        background-size: cover;
+        background-position: bottom;}
+    50%{background:url("..//assets/yoga/animation3/one.png");
+        background-size: cover;
+        background-position: bottom;}
+    95%{background:url("..//assets/yoga/animation3/two.png");
+        background-size: cover;
+        background-position: bottom;}
+    100%{background:url("..//assets/yoga/animation3/main.png");
+        background-size: cover;
+        background-position: bottom;}
+}
+
+.part .content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+}
+
+.part .content h3{
+    font-size: 30px;
+}
+
+.allt{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.allt .box{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    transition: 0.2s ease;
+}
+
+.allt .box:hover{
+    transform: scale(1.1);
+}
+
+.allt .box h3{
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.allt .box p{
+    font-size: 18px;
+}
+
+@media only screen and (max-width:900px){
+    .carousel{
+        flex-direction: column;
+    }
+}

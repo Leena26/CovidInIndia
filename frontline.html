@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/frontline.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/start.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+    <nav>
+        <div class="first-nav">
+            <a href="./index.html"><h3 style="color: black;"id="logo"><img src="./assets/logo.png" alt="">The NEW NORM</h3></a>
+            <ul class="menu">
+                <a href="./index.html"><li>Home</li></a>
+                <a href="./problem.html"><li>Problem</li></a>
+                <a href="./solution.html"><li>Solution</li></a>
+                <li onclick="drop()" id="help" >Help
+                    <i id="downA" class="fas fa-angle-down"></i>
+                    <i id="upA" class="fas fa-angle-up"></i>
+                </li>
+                <ul class="dropdown" id="drop-cont">
+                    <a href="./vaccine.html"><li>Vaccines</li></a>
+                    <a href="./frontline.html"><li>Frontliners</li></a>
+                    <a href="./donate.html"><li>Donate</li></a>
+                </ul>
+            </ul>
+        </div>
+        
+        <div class="container">
+            <div class="toggle">
+                <div class="spans">
+                    <input id="checkbox" onclick="change()" type="checkbox">
+                    <span id="top"></span>
+                    <span id="middle"></span>
+                    <span id="bottom"></span>
+                </div>
+                <a style="color:black;" href="./index.html"><h3 id="logo"> <img src="./assets/logo.png" alt="">The NEW NOM</h3></a>
+            </div>
+            <div id="overlay" class="overlay">
+                <ul>
+                    <a href="./index.html"><li>Home</li></a>
+                    <a href="./problem.html"><li>Problem</li></a>
+                    <a href="./solution.html"><li>Solution</li></a>                        
+                    <a href="./vaccine.html"><li>Vaccines</li></a>
+                    <a href="./frontline.html"><li>Frontliners</li></a>
+                    <a href="./donate.html"><li>Donate</li></a>
+                    <a href=""><li>About</li></a>
+                </ul>
+            </div>  
+        </div>
+    </nav>
+    <script src="./java/nav.js"></script>
+    <!-- END OF NAV -->
+
+    <div class="start">
+        <div class="start-c">
+            <h2>Frontline Workers</h2>
+            <p> Essential workers, including healthcare workers, are expected to go out when everyone 
+                else is expected to stay inside. Now more than ever, it is important to make sure 
+                you address your fears and making sure you have strong coping strategies. It’s 
+                especially important that you address your stress and anxiety to prevent burnout.
+            </p>
+            <div class="btns">
+                <a target="_blank" href="https://www.worldometers.info/coronavirus/"><button>Statistics<i class="fas fa-angle-right"></i></button></a>
+                <a href="./donate.html"><button id="don">Donate<i class="fas fa-angle-right"></i></button></a>
+            </div>
+        </div>
+        <img src="./assets/frontline/frontlineWorker.png" alt="">
+    </div>
+
+    <div class="first">
+        <div class="cont">
+            <h3>Heroes of The Frontline</h3>
+            <p>
+                The term “frontline workers” often conjures images of doctors in Hazmat  
+                suits and soldiers in uniform. But during the coronavirus outbreak,  
+                workers across a vast array of industries have found themselves essential
+                parts of the machine that keeps the world in motion, required to do their 
+                jobs despite great risk—whether hog  farm employees or bus drivers,
+                health counselors or police officers.Here,as part of TIME’s new issue, 
+                frontline workers of all types share their triumphs and fears in their 
+                own voices. FRONTLINERS are our Doctors, Nurses, Paramedics, Pathologists,  
+                Hospital Support Attendant’s, and Police who are going to work each day.  
+                Frontline workers often work long hours and accept increased risk of  
+                infection, yet they still give. We thank all essential workers for the 
+                important roles they are playing.
+            </p>
+        </div>
+        <iframe src="https://www.youtube.com/embed/jIYaiHwdf5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="hoverC">
+        <div class="hov" id="hov1">
+            <div class="cont">
+                <h2>Doctors and Nurses</h2>
+                <p>
+                   Doctors and nurses have to work 24/7 a day... not only that
+                   but they also have to wear a PPE kits
+                   so they don't get infected themselves.
+                </p>
+                <a class="a-story" href="./frontline.html?#story1"><button>Read More </button></a>
+            </div>
+            <img class="img" src="./assets/frontline/indianDoc.png" alt="">
+        </div>
+        <div class="hov" id="hov2">
+            <div class="cont">
+                <h2>Delivery boys</h2>
+                <p>
+                   Want anything in the lockdown? Go online and just order!
+                   But who delivers these things? The delivery boys that's who!
+                </p>
+                <a class="a-story" href="./frontline.html?#story2"><button>Read More </button></a>
+            </div>
+            <img class="img" id="imgb" src="./assets/frontline/delivery.png" alt="">
+        </div>
+        <div class="hov" id="hov3">
+            <div class="cont">
+                <h2>Police</h2>
+                <p>
+                    Fighting hard to protect law and order,
+                    the police keep us within limits in the pandemic. 
+                </p>
+                <a class="a-story" href="./frontline.html?#story3"><button>Read More </button></a>
+            </div>
+            <img class="img" src="./assets/frontline/indiaPolice.png" alt="">
+        </div>
+        <div class="hov" id="hov4">
+            <div class="cont">
+                <h2>Gaurdians of India</h2>
+                <p>
+                    Who take care of our borders? Are we safe from other countries?
+                    Thanks to the Army, Airforce and Navy, we are!
+                </p>
+                <a class="a-story" href="./frontline.html?#story4"><button>Read More </button></a>
+            </div>
+            <img class="img" id="imgd" src="./assets/frontline/military.png" alt="">
+        </div>
+    </div>
+
+
+
+    <div class="stories">
+        <div class="story story1" id="story1">
+            <div class="top">
+                <h3>Doctors and Nurses</h3>
+                <img src="./assets/frontline/indianDoc.png" alt="">
+            </div>
+            <div class="cont">
+                <p>
+                    Government and private hospitals are finding it difficult
+                    to recruit new and additional healthcare workers to care
+                    for Covid-19 patients even as the number of people testing 
+                    positive continues to grow – 1.59 million as of July 30 – our
+                    reporting in five cities found.The Covid-19 pandemic has added 
+                    to the stress of an overburdened healthcare workforce. India has
+                     one medical doctor for every 1,404 people and 1.7 nurses per 
+                     1,000 people, according to the Ministry of Health and Family 
+                     Welfare. This is lower than the World Health Organisation benchmark
+                      of one doctor and three nurses per 1,000 people.
+                </p>
+                <img class="info-img" src="./assets/frontline/docnNurse.jpg" alt="">
+            </div>
+        </div>
+        <div class="story story2" id="story2">
+            <div class="top">
+                <h3>Delivery Boys</h3>
+                <img src="./assets/frontline/delivery.png" alt="">
+            </div>
+            <div class="cont">
+                <p>
+                    Newspaper vendors & delivery boys have been hit 
+                    hard by the COVID-19 lockdown. They are now deprived
+                    of the modest money they would make earlier. Any
+                    mention of the frontline Covid warrior brings in 
+                    the images of doctors, nurses, hospital staff and 
+                    armed forces to one’s mind and yet there are many 
+                    other service providers who are risking their lives 
+                    in the pandemic and yet their role remains unrecognised.
+                </p>
+                <img src="./assets/frontline/delivery2.jpg" alt="">
+            </div>
+        </div>
+        <div class="story story3" id="story3">
+            <div class="top">
+                <h3>Police</h3>
+                <img src="./assets/frontline/indiaPolice.png" alt="">
+            </div>
+            <div class="cont">
+                <p>
+                    With the criminal justice system vulnerable to the rapid spread 
+                    of COVID-19, maintaining the status quo means jeopardizing the 
+                    lives of those connected to the system. Many officials and 
+                    advocates have rightfully focused on the need to immediately 
+                    reduce jail and prison populations, especially since the lack of 
+                    sufficient medical attention, unsanitary conditions, and 
+                    overcrowding, among other obstacles, combine to create environments 
+                    where the coronavirus can spread precipitously. 
+                </p>
+                <img src="https://img.etimg.com/thumb/msid-48039039,width-1200,height-900,imgsize-267272,overlay-economictimes/photo.jpg" alt="">
+            </div>
+        </div>
+        <div class="story" id="story4">
+            <div class="top">
+                <h3>Army, Navy and Airforce</h3>
+                <img src="./assets/frontline/military.png" alt="">
+            </div>
+            <div class="cont">
+                <p>
+                    The Army is conducting a change of mission to focus on combating 
+                    the COVID-19 pandemic. With this new mission, the Army will protect 
+                    the force, posture the force to maintain global operational readiness, 
+                    and support the national effort to fight against COVID-19. The Army 
+                    continually assesses how we will best protect Soldiers, Civilians and 
+                    their families, maintain force readiness to meet global challenges, 
+                    and provide support to the FEMA-led national COVID-19 response.
+                </p>
+                <img id="clip" src="https://static.theprint.in/wp-content/uploads/2020/02/Indian-Army-4.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="foot">
+        <h3>Want to know who made this?</h3>
+        <a href="./about.html"><button>View More</button></a>
+    </div>
+</body>
+</html>

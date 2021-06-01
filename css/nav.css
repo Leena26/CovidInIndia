@@ -1,0 +1,300 @@
+@import url('./fonts.css');
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden ;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+body::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #c9cacc;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #45526C; 
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #3a445a; 
+}
+
+a{
+    text-decoration: none;
+}
+
+.first-nav{
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed;  */
+    background: white;
+}
+
+#logo{
+    margin:0 30px ;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+#logo img{
+    height: 70px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    padding-right: 40px;
+}
+
+.menu li{
+   font-size: 22px;
+   list-style-type: none; 
+   margin: 0 15px;
+   font-weight: 400;
+   padding: 5px 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: all 0.2s ease;
+   cursor: pointer;
+}
+
+.menu a{
+    color: black;
+    text-decoration: none;
+}
+
+.menu li:hover, .menu li:focus{
+    background: #45526C;
+    color: white;
+}
+
+.menu li i{
+    margin: 2px;
+    margin-top: 7px;
+}
+
+.menu li .fa-angle-up{
+    display: none;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    z-index: 5;
+    width: 135px;
+    text-align: center;
+    top: 55px;
+    margin-left: 100px;
+    padding: 0;
+}
+
+#help:hover ~ .dropdown{
+    flex-direction: column;
+    width: 135px;
+    text-align: center;
+    top: 55px;
+    margin-left: 100px;
+    padding: 0;
+}
+
+.dropdown li{
+    font-size: 18px;
+    border-bottom: 2px solid #45526C;
+    float: none;
+    background: white;
+}
+
+.dropdown a{
+    height: 40px;
+    width: 100%;
+    color: black;
+    text-decoration: none;
+}
+
+/* Navbar 2.0 */
+
+.container{
+   display: none;
+}
+
+.toggle{
+    background: White;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 3000;
+}
+
+.spans input{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: -15px;
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+}
+
+.spans span{
+    background:#45526C;
+    border: none;
+    height: 5px;
+    width: 30px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    transition:  all .35s ease;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.spans span:nth-of-type(1){
+    top: 11px;
+}
+
+.spans span:nth-of-type(2){
+    top: 21px;
+}
+
+.spans span:nth-of-type(3){
+    top: 32px;
+}
+
+.overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: #45526cf3;
+    visibility: hidden;
+    position: absolute;
+    z-index: 100;
+}
+
+.overlay ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.overlay ul a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 8px;
+    font-size: 30px;
+}
+
+/* RESPONSIVENESS */
+@media only screen and (max-width:1000px){
+    .first-nav{
+        height: 50px;
+    }
+    .menu li{
+        font-size: 20px;
+        padding: 5px 10px;
+    }
+    #logo{
+        font-size: 25px;
+    }
+    #logo img{
+        height: 60px;
+    }
+}
+
+@media only screen and (max-width:850px){
+    .menu li{
+        font-size: 16px;
+        padding: 5px 3px;
+    }
+    #logo{
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width:700px){
+    .first-nav{
+        height: 45px;
+    }
+    .menu li{
+        padding: 5px 0px;
+        margin: 0 10px;
+        font-size: 15px;
+    }
+    #logo{
+        font-size: 18px;
+        width: 80%;
+    }
+    #logo img{
+        height: 50px;
+    }
+    #help{
+        width: 60px;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .first-nav{
+        display: none;
+    }
+
+    .container{
+        display: flex;
+    }
+}
+
+
+.foot{
+    display: flex;
+    height: 70px;
+    background: #45526C;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.foot h3{
+    margin-right: 30px;
+}
+
+.foot button{
+    padding: 10px;
+    width: 120px;
+    border-radius: 9px;
+    border: 5px solid #f8a488;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition:all 0.2s ease;
+    background: #f8a488;
+    color: white;
+}
+
+.foot button:hover{
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}

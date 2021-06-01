@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/vaccine.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/start.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+    <nav>
+        <div class="first-nav">
+            <a href="./index.html"><h3 style="color: black;"id="logo"><img src="./assets/logo.png" alt="">The NEW NORM</h3></a>
+            <ul class="menu">
+                <a href="./index.html"><li>Home</li></a>
+                <a href="./problem.html"><li>Problem</li></a>
+                <a href="./solution.html"><li>Solution</li></a>
+                <li onclick="drop()" id="help" >Help
+                    <i id="downA" class="fas fa-angle-down"></i>
+                    <i id="upA" class="fas fa-angle-up"></i>
+                </li>
+                <ul class="dropdown" id="drop-cont">
+                    <a href="./vaccine.html"><li>Vaccines</li></a>
+                    <a href="./frontline.html"><li>Frontliners</li></a>
+                    <a href="./donate.html"><li>Donate</li></a>
+                </ul>
+            </ul>
+        </div>
+        
+        <div class="container">
+            <div class="toggle">
+                <div class="spans">
+                    <input id="checkbox" onclick="change()" type="checkbox">
+                    <span id="top"></span>
+                    <span id="middle"></span>
+                    <span id="bottom"></span>
+                </div>
+                <a style="color:black;" href="./index.html"><h3 id="logo"> <img src="./assets/logo.png" alt="">The NEW NOM</h3></a>
+            </div>
+            <div id="overlay" class="overlay">
+                <ul>
+                    <a href="./index.html"><li>Home</li></a>
+                    <a href="./problem.html"><li>Problem</li></a>
+                    <a href="./solution.html"><li>Solution</li></a>                        
+                    <a href="./vaccine.html"><li>Vaccines</li></a>
+                    <a href="./frontline.html"><li>Frontliners</li></a>
+                    <a href="./donate.html"><li>Donate</li></a>
+                    <a href=""><li>About</li></a>
+                </ul>
+            </div>  
+        </div>
+    </nav>
+    <script src="./java/nav.js"></script>
+    <!-- END OF NAV -->
+
+    <div class="start">
+        <div class="start-c">
+            <h2>Vaccine vs Virus</h2>
+            <p> Vaccines are substances that prevent the spread of disease.
+                The word vaccine comes from the Latin vaccinia, meaning “cowpox.”
+                The vaccines instruct our cells to make a harmless piece of what
+                is known as the spike protein. This is the protein found on 
+                the surface of the coronavirus that causes COVID-19. 
+            </p>
+            <div class="btns">
+                <a href="./solution.html"><button>Solution<i class="fas fa-angle-right"></i></button></a>
+                <a href="./donate.html"><button id="don">Donate<i class="fas fa-angle-right"></i></button></a>
+            </div>
+        </div>
+        <img src="./assets/syringe.png" alt="">
+    </div>
+
+    <div class="vaC">
+        <div class="left">
+            <div>
+                <h2>Precautions for Vaccines</h2>
+                <p>
+                    The way we do in a clinical trial phase: first, the recipient 
+                    will be asked to give a written consent. Additionally, the 
+                    recipient will be followed up actively to see if the vaccine 
+                    has led to any side effects. In short, it will be an extension 
+                    of the Phase 3 trial. But in this, the person would know that 
+                    he or she has received the vaccine, and not the placebo. It is 
+                    completely voluntary.To ensure that a vaccine is safe, we need 
+                    to try it on a large number of people. The vaccine developers 
+                    have not reduced the sample size at any stage of clinical trials 
+                    rather it was bigger than what we usually test a vaccine on.
+                    <br><br>
+                    When a vaccine is tested, most of the adverse events or unwanted 
+                    effects, if any, occur in the first four to six weeks of its 
+                    administration. So, in order to ensure that it is safe, we keep a 
+                    close watch, for the first two-three months, on the people it has 
+                    been given to. This data help us decide if a vaccine is safe. 
+                </p>
+                <img src="./assets/vaccine/Covaxin.png" alt="">
+            </div>
+            <div>
+                <h2>About the Vaccine</h2>
+                <p>
+                    Two vaccines that have been granted emergency use authorization by 
+                    the Central Drugs Standard Control Organization (CDSCO) in India 
+                    are Covishield® (AstraZeneca's vaccine manufactured by Serum Institute 
+                    of India) and Covaxin® (manufactured by Bharat Biotech Limited).
+                    As of January 2021, nine COVID-19 vaccines were in emergency use in 
+                    numerous countries around the globe. <br><br> COVID-19 affects all age groups; 
+                    however, morbidity & mortality is several times higher in adults particularly 
+                    in those above the age of 50 years. Children have either asymptomatic 
+                    or mild infection. The general practice is to first evaluate any new 
+                    vaccine in older population and then age reduction is done to assess 
+                    the safety and effectiveness in paediatric population. The currently 
+                    available vaccines have not been evaluated in children so far. There 
+                    are some clinical trials now underway to test the effectiveness and 
+                    safety of the COVID-19 vaccines in children.
+                </p>
+                <img src="./assets/vaccine/CovidSheild.png" alt="">
+            </div>
+        </div>
+        <div class="right">
+            <div class="book">
+                <h3>Book for you vaccines now!</h3>
+                <p>To book your vaccines for covid-19, click on the button below.</p>
+                <img src="./assets/vaccine/vaccine2.png" alt="">
+                <a class="a" href="https://www.cowin.gov.in/home"><button>Book now <i class="fas fa-angle-right"></i></button></a>
+            </div>
+            <div class="random">
+                <h2>Donate</h2>
+                <p>Donate and help people who need support in these times.</p>
+                <img src="./assets/frontliner.png" alt="">
+                <a href="#"><button>Donate <i class="fas fa-angle-right"></i></button></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="total">
+        <div class="leftt">
+            <h2>Frequently Asked Questions</h2>
+            <p>Clear your doubts here</p>
+            <a target="_blank" href="https://www.mohfw.gov.in/covid_vaccination/vaccination/faqs.html"><button>View All FAQs <i class="fas fa-angle-right"></i></button></a>
+        </div>
+        <div class="rightt">
+            <div class="top">
+                <a target="_blank" href="https://www.mohfw.gov.in/covid_vaccination/vaccination/faqs.html#vaccine-registration"><div>
+                    <i class="fas fa-notes-medical"></i>
+                    <h4>Vaccine registration</h4>
+                </div></a>
+                <a target="_blank" href="https://www.mohfw.gov.in/covid_vaccination/vaccination/faqs.html#about-the-vaccine"><div>
+                    <i class="fas fa-viruses"></i>
+                    <h4>About the Vaccine</h4>
+                </div></a>
+                <a target="_blank" href="https://www.mohfw.gov.in/covid_vaccination/vaccination/faqs.html#who-will-get-the-vaccine"><div>
+                    <i class="fas fa-syringe"></i>
+                    <h4>Who will get the Vaccine?</h4>
+                </div></a>
+            </div>
+            <div class="bottom">
+                <a target="_blank" href="https://www.mohfw.gov.in/covid_vaccination/vaccination/faqs.html#how-will-we-be-vaccinated"><div>
+                    <i class="fas fa-medkit"></i>
+                    <h4>How will you be vaccinated?</h4>
+                </div></a>
+                <a target="_blank" href="https://www.mohfw.gov.in/covid_vaccination/vaccination/faqs.html#what-to-expect-before-vaccination"><div>
+                    <i class="fas fa-people-arrows"></i>
+                    <h4>What to expect before vaccination</h4>
+                </div></a>
+                <a target="_blank" href="https://www.mohfw.gov.in/covid_vaccination/vaccination/faqs.html#what-to-expect-after-vaccination"><div>
+                    <i class="fas fa-head-side-mask"></i>
+                    <h4>What to expect after vaccination?</h4>
+                </div></a>
+            </div>
+        </div>
+        <a target="_blank" href="https://www.mohfw.gov.in/covid_vaccination/vaccination/faqs.html"><button class="a">View All FAQs <i class="fas fa-angle-right"></i></button></a>
+    </div>
+
+    <div class="foot">
+        <h3>Want to know who made this?</h3>
+        <a href="./about.html"><button>View More</button></a>
+    </div>
+</body>
+</html> 

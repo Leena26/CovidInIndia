@@ -1,0 +1,300 @@
+@import url('./fonts.css');
+*{
+    margin: 0;
+    padding: 0;
+}
+ 
+body{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.first{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.first .cont{
+  width: 60%;
+}
+
+.first .cont h3{
+  font-size: 30px;
+}
+
+.first .cont p{
+  font-size: 20px;
+  line-height: 30px;
+}
+
+iframe{
+  height: 500px;
+  width: 900px;
+  margin: 30px;
+}
+
+.hoverC{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  /* background: rgb(245, 208, 214); */
+  justify-content: center;
+  align-items: center;
+}
+
+.hov{
+  background: #f6f6f6;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin: 30px;
+  width: 500px;
+  height: 350px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 20px;
+  position: relative;
+  overflow: visible;
+}
+
+.hov img{
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+#hov1 img, #hov3 img{
+  height: 270px;
+  bottom: 15%;
+}
+
+#hov1 img{
+  left: 25%;
+}
+
+#hov3 img{
+  left: 20%;
+}
+
+#hov1 .cont, #hov3 .cont{
+  width: 60%;
+  margin-left: 200px;
+  padding: 20px 20px 20px 40px;
+  transition: 0.5s;
+  right:0%;
+  opacity: 1;
+  visibility: visible;
+}
+
+#hov2 img, #hov4 img{
+  left: 80%;
+  height: 300px;
+}
+
+#hov2 img{
+  left: 90%;
+  height: 250px;
+  bottom: 15%;
+}
+
+#hov2 .cont, #hov4 .cont{
+  width: 50%;
+  padding: 20px 20px 20px 40px;
+  transition: 0.5s;
+  left: 0%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.hov button{
+  padding: 5px;
+  width: 130px;
+  border: 5px solid #f8a488;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition:all 0.2s ease;
+  margin-top: 10px;
+}
+
+.hov button:hover{
+  background: #f8a488;
+  color: #F8F5F1;
+}
+
+
+/* STORIES */
+
+.stories{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.story{
+  width: 80%;
+  height: 400px;
+  background: #f6f6f6;
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+
+.story .top{
+  width: 100%;
+  height: 80px;
+  background: #ebe9e9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.story .top h3{
+  margin-left: 30px;
+  font-size: 28px;
+}
+
+.story .top img{
+  height: 100%;
+  margin-right: 20px;
+}
+
+.story .cont{
+  display: flex;
+  align-items: center;
+  height: 70%;
+  width: 90%;
+  padding: 20px;
+}
+
+.story .cont p{
+  width: 60%;
+  margin-left: 80px;
+}
+
+.story .cont img{
+  height: 90%;
+  margin-left: 30px;
+}
+@media only screen and (max-width:930px){
+  iframe{
+    width: 80%;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width:850px){
+  .story{
+    height: 600px;
+  }
+  .story .cont{
+    flex-direction: column;
+  }
+  .story .cont p{
+    width: 80%;
+    margin-left: 0;
+    height:100%;
+  }
+  #hov2 img{
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width:750px){
+  .story .cont img{
+    display: none;
+  }
+  .story{
+    height: auto;
+  }
+  .hov{
+    width: 400px;
+    height: 270px;
+  }
+  #hov1 img, #hov3 img, #hov2 img, #hov4 img{
+    height: 300px;
+  }
+  #hov2 img{
+    height: 200px;
+  }
+  .hov h2{
+    font-size: 20px;
+  }
+  .hov p{
+    font-size: 13px;
+  }
+  iframe{
+    width: 80%;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width:450px){
+  .hov{
+    margin: 20px;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    position: relative;
+    overflow: visible;
+  }
+  
+  .hov img{
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+  #hov1 img, #hov3 img{
+    left: 20%;
+    height: 200px;
+  }
+  #hov1 .cont, #hov3 .cont{
+    width: 50%;
+    margin-left: 100px;
+    padding: 20px 20px 20px 40px;
+  }
+  #hov1 img{
+    left: 17%;
+  }
+  #hov2 img, #hov4 img{
+    left: 80%;
+    height: 200px;
+  }
+  #hov2 img{
+    height: 70px;
+    left: 90%;
+    bottom: 30%;
+  }
+  #hov2 .cont, #hov4 .cont{
+    width: 50%;
+  }
+  .hov button{
+    width: 100px;
+    border: 5px solid #f8a488;
+    font-size: 10px;
+  }
+  .hov .cont h2{
+    font-size: 15px;
+  }
+  .hov .cont p{
+    font-size: 5px;
+  }
+  .story .top h3{
+    font-size: 20px;
+  }
+  .stories{
+    margin-bottom: 50px;
+  }
+  iframe{
+    width: 80%;
+    height: 200px;
+  }
+}

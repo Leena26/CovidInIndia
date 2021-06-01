@@ -1,0 +1,477 @@
+@import url("./fonts.css");
+
+*{
+    margin: 0;
+    padding:0;
+}
+/*
+    #F8F5F1
+    #F8A488
+    #5AA897
+    #45526C 
+*/
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 400px;
+    background: #F8F5F1;
+}
+
+.start-c{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+}
+
+.start-c h2{
+    font-size: 50px;
+}
+
+.start-c p{
+    font-size: 20px;
+    width: 90%;
+}
+
+.start-c .btns{
+    display: flex;
+    margin-top: 20px;
+}
+
+.start-c .btns{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+.start-c button{
+    padding: 10px;
+    width: 120px;
+    border-radius: 9px;
+    border: 5px solid #f8a488;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition:all 0.2s ease;
+}
+
+#don{
+    margin-left: 10px;
+}
+
+.start-c i{
+    margin-left: 5px;
+}
+
+.start-c button:hover, .start-c button:focus{
+    background: #f8a488;
+    cursor: pointer;
+    color: #F8F5F1;
+}
+
+
+
+/* SECOND PART */
+
+.two{
+    width: 100%;
+    margin-top: 40px;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+}
+
+/* Cards */
+
+.newsc{
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.bCard{
+    background: #f8a488;
+    width: 760px;
+    height: 400px;
+    background: url("https://i.guim.co.uk/img/media/9109ce399c34f40089b08bbf2af34a9af9c21afe/0_50_3763_2257/master/3763.jpg?width=445&quality=45&auto=format&fit=max&dpr=2&s=d97df02cb8ca9343806745967e0e6c8d");
+    background-size: 100% 95%;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.bCard .c1-cont{
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    background: #f6f6f6;
+}
+
+.bCard .c1-cont h2{
+    color: black;
+    text-decoration: none;
+    transition:all 0.5s ease;
+}
+
+.bCard .c1-cont h2:hover{
+    text-decoration: underline;
+}
+
+.cwImg .card{
+    width: 700px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    background: #f6f6f6;
+    padding: 10px 30px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.cwImg .card .c-cont{
+    width: 51%;
+    height: 80%;
+}
+
+.cwImg .card img{
+    height: 150px;
+    width: auto;
+}
+
+.cwImg .card .c-cont h3{
+    color: black;
+    transition:all 0.5s ease;
+}
+
+.cwImg .card .c-cont h3:hover{
+    text-decoration: underline;
+}
+
+/* Side bar */
+
+.donate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    width: 450px;
+    background:#f6f6f6;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    height: 400px;
+}
+
+.donate img, .front img{
+    width: 250px;
+}
+
+.donate h2, .front h2{
+    font-size: 26px;
+}
+
+.donate p, .front p{
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.donate button{
+    width: 100px;
+}
+
+.donate i, .front i{
+    margin-left: 5px;
+}
+
+.donate button:hover, .front button:hover{
+    background: #f8a488;
+    color: #F8F5F1;
+}
+
+.front{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    width: 450px;
+    background:#f6f6f6;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    height: 500px;
+    margin-top: 30px;
+}
+
+.front button{
+    width: 130px;
+}
+.donate button, .front button{
+    padding: 5px;
+    border: 5px solid #f8a488;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition:all 0.2s ease;
+    margin-top: 10px;
+}
+
+.side{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* video */
+
+.vids{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+/* RESPONSIVENESS */
+@media only screen and (max-width:1250px){
+    .bCard{
+        width: 680px;
+    }
+    .bCard .c1-cont h2{
+        font-size: 20px;
+    }
+    .bCard .c1-cont p{
+        font-size: 15px;
+    }
+    .cwImg .card{
+        width: 630px;
+    }
+}
+
+@media only screen and (max-width:1200px){
+    .front, .donate{
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width:1100px){
+    .bCard{
+        width: 600px;
+    }
+    .cwImg .card{
+        width: 550px;
+    }
+    .donate img, .front img{
+        width: 200px;
+    }
+    .cwImg .card img{
+        height: 150px;
+        width: auto;
+    }
+    .cwImg .card h3{
+        font-size: 16px;
+    }
+    .cwImg .card p{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .donate, .front{
+        width: 300px;
+    }
+    .front{
+        height: 450px;
+    }
+}
+
+@media only screen and (max-width:950px){
+    .bCard{
+        width: 500px;
+        height: 320px;
+    }
+    .bCard .c1-cont h2{
+        font-size: 17px;
+    }
+    .cwImg .card{
+        width: 450px;
+    }
+    .cwImg .card img{
+        height: 120px;
+        width: auto;
+    }
+    .cwImg .card h3{
+        font-size: 16px;
+    }
+    .cwImg .card p{
+        font-size: 13px;
+    }
+    iframe{
+        width: 90%;
+        height: 500px;
+    }
+}
+@media only screen and (max-width:800px){
+    .two{
+        display: flex;
+        flex-direction: column;
+    }
+    .bCard{
+        width: 600px;
+        height: 380px;
+    }
+    .cwImg .card{
+        width: 550px;
+    }
+    .donate img, .front img{
+        width: 200px;
+    }
+    .cwImg .card img{
+        height: 150px;
+        width: auto;
+    }
+    .cwImg .card h3{
+        font-size: 16px;
+    }
+    .cwImg .card p{
+        font-size: 13px;
+    }
+    .newsc{
+        width: 90%;
+        margin-right: 40px;
+    }
+    .side{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:750px){
+    iframe{
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width:650px){
+    .cwImg .card{
+        width: 450px;
+    }
+    .cwImg .card img{
+        height: 120px;
+        width: auto;
+    }
+    .cwImg .card h3{
+        font-size: 16px;
+    }
+    .cwImg .card p{
+        font-size: 13px;
+    }
+    .bCard{
+        width: 500px;
+        height: 320px;
+    }
+    .bCard .c1-cont h2{
+        font-size: 17px;
+    }
+    iframe{
+        height: 300px;
+    }
+}
+@media only screen and (max-width:600px){
+    .newsc{
+        padding: 20px;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:550px){
+    .cwImg .card{
+        width: 400px;
+    }
+    .cwImg .card img{
+        height: 120px;
+        width: auto;
+    }
+    .cwImg .card h3{
+        font-size: 14px;
+    }
+    .bCard{
+        width: 450px;
+        height: 320px;
+    }
+    .bCard .c1-cont h2{
+        font-size: 15px;
+    }
+    .bCard .c1-cont p{
+        font-size: 13px;
+    }
+    .newsc{
+        margin-left: 0px;
+    }
+    iframe{
+        height: 250px;
+    }
+}
+@media only screen and (max-width:500px){
+    .cwImg .card{
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .cwImg .card img{
+        height: 120px;
+        width: auto;
+        margin-top:0;
+    }
+
+    .cwImg .card .c-cont{
+        width: 90%;
+        height: auto;
+        margin-bottom: 0;
+    }
+    .cwImg .card h3{
+        font-size: 14px;
+    }
+    .bCard{
+        width: 400px;
+        height: 280px;
+    }
+}
+
+@media only screen and (max-width:450px){
+    .bCard{
+        width: 350px;
+        height: 250px;
+    }
+    iframe{
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width:350px){
+    iframe{
+        height: 150px;
+        width: 250px;
+    }
+}
+

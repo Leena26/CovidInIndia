@@ -1,0 +1,99 @@
+@import url(./fonts.css);
+
+.part{
+    font-family: 'Open Sans', sans-serif;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.left{
+    width: 50%;
+}
+
+.left h3{
+    font-size: 30px;
+}
+
+.left p{
+    font-size: 20px;
+    width: 70%;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    width: 450px;
+    background:#f6f6f6;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    height: 500px;
+    margin-top: 30px;
+}
+
+.right button{
+    width: 130px;
+}
+ .right button{
+    padding: 5px;
+    border: 5px solid #f8a488;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition:all 0.2s ease;
+    margin-top: 10px;
+}
+
+.right img{
+    height: 60%;
+}
+
+/* RESPONSIVENESS */
+@media only screen and (max-width:1200px){
+    .right{
+        width: 350px;
+    }
+}
+@media only screen and (max-width:1000px){
+    .right{
+        height: 450px;
+        width:300px ;
+    }
+}
+@media only screen and (max-width:800px){
+    .right img{
+        width: 200px;
+    }
+    .part{
+        flex-direction: column;
+        align-items: center;
+        align-items: center;
+        margin: 0;
+        margin-top: 30px;
+    }
+    .left{
+        width: 90%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .left p{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .right{
+        width: 90%;
+    }
+    .right img{
+        width: 70%;
+    }
+}
