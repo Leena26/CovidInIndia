@@ -297,3 +297,28 @@ a{
     color: white;
     cursor: pointer;
 }
+
+@media only screen and (max-width:450px){
+    .foot{
+        height: 60px;
+    }
+    .foot button{
+        font-size: 10px;
+        padding: 6px;
+        width: 85px;
+    }
+    .foot h3{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:450px){
+    .foot{
+        height: 90px;
+        flex-direction: column;
+    }
+    .foot h3{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}
