@@ -29,6 +29,7 @@
 .start-c .btns{
     display: flex;
     margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .start-c .btns{
@@ -53,6 +54,7 @@ a{
     text-transform: uppercase;
     transition:all 0.2s ease;
     background: transparent;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #don{
