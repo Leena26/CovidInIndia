@@ -312,7 +312,7 @@ a{
     }
 }
 
-@media only screen and (max-width:450px){
+@media only screen and (max-width:380px){
     .foot{
         height: 90px;
         flex-direction: column;
