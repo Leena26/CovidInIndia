@@ -1,83 +1,104 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+.prf{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.prf .cards{
+    width: 500px;
+    height: 680px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+.cards .pic{
+  width: 200px;
+  height: 200px;
+  background: white;
+  border-radius: 50%;
+  border: 10px solid #f8f8f8;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.prf1 .pic{
+  background: url("./assets/about.jpg");
+  background-size: cover;
+}
+
+.prf2 .pic{
+  background: url("./assets/anagha.jpg");
+  background-size: cover;
+}
+
+.prf3 .pic{
+  background: url("./assets/tanve.jpg");
+  background-size: cover;
+}
+
+.cards img{
+  height: 50px;
+  width: 70px;
+  transform: rotate(180deg);
+  margin-top: -15px;
+  z-index: -1;
+}
+
+.cards .cont{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: -20px;
+}
+
+.prf1 .cont{
+  background-image: url("./assets/f581b50bc228e0d6cdba1772ccfc4b4d-removebg-preview.png");
+  background-size: cover;
+  background-position: center;
+  overflow: visible;
+}
+
+.prf2 .cont{
+  background-image: url("./assets/54bb56c7785472bd54344e054e539324-removebg-preview.png");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+
+.prf3 .cont{
+  background-image: url("./assets/stick.png");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+
+.cards h2{
+  font-size: 46px;
+}
+
+.cards p{
+  font-size: 30px;
+}
+
+@media only screen and (max-width:450px) {
+  .prf .cards{
+    margin: 5px;
+  }
+  .cards .cont{
+    height: 350px;
+  }
+  .cards h2{
+    font-size: 37px;
   }
   
-  html {
-    box-sizing: border-box;
+  .cards p{
+    font-size: 24px;
   }
-  
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  
-  .column {
-    float: left;
-    width: 33.3%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-  }
-  
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 8px;
-  }
-  
-   h1{
-      display: block;
-    background-color: #567;
-    text-align: center;
-    padding: 50px;
-    color: white;
-  }
-  
-  .about-section {
-    padding: 50px;
-    text-align: center;
-    background-color: #567;
-    color: white;
-  }
-  
-  .about-section img{
-      width: 20%;
-  }
-  
-  .content {
-      text-align: center;
-    padding: 0 16px;
-  }
-  
-  .content::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  .title {
-    color: grey;
-  }
-  
-  .button {
-    color: black;
-    text-decoration: none;
-    font-size: 100%;
-    border: 7px solid #45526C;
-    padding: 8px;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    transition: 0.5s;
-  }
-  
-  .button:hover {
-    text-decoration: none;
-    background-color: #45526C;
-    color: white;
-  }
-  
-  @media screen and (max-width: 650px) {
-    .column {
-      width: 100%;
-      display: block;
-    }
-  }
+}
