@@ -208,8 +208,9 @@ iframe{
         margin-bottom: 10%;
         display: flex;
         flex-wrap: wrap;
-        padding: 30px;
+        padding: 10px;
         align-items: center;
         justify-content: space-evenly;
+        padding-bottom:5px;
     }
 }
